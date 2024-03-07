@@ -1,0 +1,89 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::show_empty_categories"
+msgid "Categories without products"
+msgstr "Categories without products"
+
+msgctxt "Addons::description::show_empty_categories"
+msgid "Allows you to update categories' statuses depending on the products count per each category"
+msgstr "Allows you to update categories' statuses depending on the products count per each category"
+
+msgctxt "Languages::categories.show_empty_categories"
+msgid "Hide empty categories"
+msgstr "Hide empty categories"
+
+msgctxt "Languages::show_when_empty"
+msgid "Show the category on the storefront"
+msgstr "Show the category on the storefront"
+
+msgctxt "Languages::show_empty_categories.tt_views_categories_update_empty"
+msgid "Show the category on the storefront even if it is empty"
+msgstr "Show the category on the storefront even if it is empty"
+
+msgctxt "SettingsOptions::show_empty_categories::default_value_for_cat"
+msgid "Default value for all categories"
+msgstr "Default value for all categories"
+
+msgctxt "SettingsVariants::show_empty_categories::default_value_for_cat::N"
+msgid "Hide all empty categories in the store"
+msgstr "Hide all empty categories in the store"
+
+msgctxt "SettingsVariants::show_empty_categories::default_value_for_cat::Y"
+msgid "Show all the categories on the storefront even if it is empty"
+msgstr "Show all the categories on the storefront even if it is empty"
+
+msgctxt "Languages::text_categories_updated"
+msgid "Categories have been synchronized succesfully"
+msgstr "Categories have been synchronized succesfully"
+
+msgctxt "Languages::show_empty_categories_info.text_sync"
+msgid "To synchronize products' count in your categories, please <a class=\"cm-ajax cm-comet btn btn-primary\" href=\"[sync_url]\">Synchronize categories</a>"
+msgstr "To synchronize products' count in your categories, please <a class=\"cm-ajax cm-comet btn btn-primary\" href=\"[sync_url]\">Synchronize categories</a>"
+
+msgctxt "Languages::show_empty_categories.text_sync_cron"
+msgid "You can run the synchronization of the categories automatically at certain time intervals. To do it, add the following command to CRON:"
+msgstr "You can run the synchronization of the categories automatically at certain time intervals. To do it, add the following command to CRON:"
+
+msgctxt "SettingsOptions::show_empty_categories::information"
+msgid "Information"
+msgstr "Information"
+
+msgctxt "SettingsOptions::show_empty_categories::site_setting"
+msgid "Category settings"
+msgstr "Category settings"
+
+msgctxt "Languages::empty_categories.return_to_default"
+msgid "The category and menu statuses have been reverted to default. After next add-on installation/activation you'd need to sync your categories again."
+msgstr "The category and menu statuses have been reverted to default. After next add-on installation/activation you'd need to sync your categories again."
+
+msgctxt "Languages::instructions_to_sync"
+msgid "In order to hide empty categories, please synchronize them on the add-on's settings page."
+msgstr "In order to hide empty categories, please synchronize them on the add-on's settings page."
+
+msgctxt "SettingsVariants::show_empty_categories::hide_menu_items::N"
+msgid "Do not hide category-assigned menu items"
+msgstr "Do not hide category-assigned menu items"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_menu_items::Y"
+msgid "Hide category-assigned menu item if the category gets hidden"
+msgstr "Hide category-assigned menu item if the category gets hidden"
+
+msgctxt "SettingsOptions::show_empty_categories::hide_menu_items"
+msgid "Menu items"
+msgstr "Menu items"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_parent_categories::Y"
+msgid "Hide empty parent categories"
+msgstr "Hide empty parent categories"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_parent_categories::N"
+msgid "Do not hide parent categories"
+msgstr "Do not hide parent categories"
+
+msgctxt "SettingsOptions::show_empty_categories::hide_parent_categories"
+msgid "Parent categories"
+msgstr "Parent categories"

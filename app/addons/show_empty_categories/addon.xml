@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>show_empty_categories</id>
+    <version>7.0</version>
+    <priority>1000</priority>
+    <position>45</position>
+    <status>active</status>
+    <supplier>CS-Cart Support</supplier>
+    <default_language>ru</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="information">
+                        <type>header</type>
+                    </item>
+                    <item id="sync_cat">
+                        <type>info</type>
+                        <handler>fn_show_empty_categories_info</handler>
+                    </item>
+                    <item id="site_setting">
+                        <type>header</type>
+                    </item>
+                    <item id="default_value_for_cat">
+                        <type>radiogroup</type>
+                        <default_value>N</default_value>
+                        <variants>
+                            <item id="N"/>
+                            <item id="Y"/>
+                        </variants>
+                    </item>
+                    <item id="hide_menu_items">
+                        <type>radiogroup</type>
+                        <default_value>Y</default_value>
+                        <variants>
+                            <item id="N"/>
+                            <item id="Y"/>
+                        </variants>
+                    </item>
+                    <item id="hide_parent_categories">
+                        <type>radiogroup</type>
+                        <default_value>N</default_value>
+                        <variants>
+                            <item id="N"/>
+                            <item id="Y"/>
+                        </variants>
+                    </item>
+                    <item id="cron_command">
+                        <type>template</type>
+                        <default_value>cron_command.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <functions>
+        <item for="uninstall">fn_show_empty_categories_return_to_default</item>
+    </functions>
+    <queries>
+        <item for="install">ALTER TABLE ?:categories ADD `show_when_empty` char(1) NOT NULL default 'N'</item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:empty_categories` (
+            `category_id` mediumint(8) NOT NULL DEFAULT '0',
+            `product_count` mediumint(8) NOT NULL DEFAULT '0',
+            `show_when_empty` mediumint(8) NOT NULL,
+            `menu_id` mediumint(8) NOT NULL DEFAULT '0',
+            `parent_id` mediumint(8) NOT NULL DEFAULT '0',
+            UNIQUE (`category_id`)
+            ) ENGINE='InnoDB' COLLATE 'utf8_general_ci';
+        </item>
+        <item for="uninstall">ALTER TABLE ?:categories DROP `show_when_empty`</item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:empty_categories`;
+        </item>
+    </queries>
+</addon>

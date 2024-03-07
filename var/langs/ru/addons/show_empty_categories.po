@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: cs-cart-latest\n"
+"X-Crowdin-Project-ID: 50163\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /release-4.15.2/addons/hidpi.po\n"
+"X-Crowdin-File-ID: 6880\n"
+"PO-Revision-Date: 2022-10-11 10:44\n"
+
+msgctxt "Addons::name::show_empty_categories"
+msgid "Categories without products"
+msgstr "Категории без товаров"
+
+msgctxt "Addons::description::show_empty_categories"
+msgid "Allows you to update categories' statuses depending on the products count per each category"
+msgstr "Модуль позволяет управлять отображением категорий магазина на витрине в зависимости от наличия в ней товаров."
+
+msgctxt "Languages::categories.show_empty_categories"
+msgid "Hide empty categories"
+msgstr "Категории без товаров"
+
+msgctxt "Languages::show_when_empty"
+msgid "Show the category on the storefront"
+msgstr "Показывать категорию на витрине"
+
+msgctxt "Languages::show_empty_categories.tt_views_categories_update_empty"
+msgid "Show the category on the storefront even if it is empty"
+msgstr "Показывать категорию на витрине даже если в ней нет товаров"
+
+msgctxt "SettingsOptions::show_empty_categories::default_value_for_cat"
+msgid "Default value for all categories"
+msgstr "Значение для категорий по умолчанию"
+
+msgctxt "SettingsVariants::show_empty_categories::default_value_for_cat::N"
+msgid "Hide all empty categories in the store"
+msgstr "Скрыть все пустые категории в магазине"
+
+msgctxt "SettingsVariants::show_empty_categories::default_value_for_cat::Y"
+msgid "Show all the categories on the storefront even if it is empty"
+msgstr "Показывать все категории на витрине даже если в них нет товаров"
+
+msgctxt "Languages::text_categories_updated"
+msgid "Categories have been synchronized succesfully"
+msgstr "Категории успешно синхронизированы"
+
+msgctxt "Languages::show_empty_categories_info.text_sync"
+msgid "To synchronize products' count in your categories, please <a class=\"cm-ajax cm-comet btn btn-primary\" href=\"[sync_url]\">Synchronize categories</a>"
+msgstr "Для того чтобы обновить статусы категорий в зависимости от наличия в них товаров, пожалуйста нажмите <a class=\"cm-ajax cm-comet btn btn-primary\" href=\"[sync_url]\">Синхронизировать категории</a>"
+
+msgctxt "Languages::show_empty_categories.text_sync_cron"
+msgid "You can run the synchronization of the categories automatically at certain time intervals. To do it, add the following command to CRON:"
+msgstr "Вы можете запускать обновление категорий без товаров автоматически через определённые промежутки времени. Для этого добавьте в CRON следующую команду:"
+
+msgctxt "SettingsOptions::show_empty_categories::information"
+msgid "Information"
+msgstr "Информация"
+
+msgctxt "SettingsOptions::show_empty_categories::site_setting"
+msgid "Category settings"
+msgstr "Настройки категорий"
+
+msgctxt "Languages::empty_categories.return_to_default"
+msgid "The categories and menu item statuses have been returned to default. After next add-on installation/activation you'd need to sync the categories again."
+msgstr "Статусы категорий и элементов меню были возвращенны к значению по умолчанию. После следующей установки/активации модуля вам будет необходимо синхронизировать категории еще раз."
+
+msgctxt "Languages::instructions_to_sync"
+msgid "To hide empty categories, please synchronize them in the add-on's settings."
+msgstr "Для того чтобы скрыть категории без товаров, пожалуйста синхронизируйте их в настройках модуля."
+
+msgctxt "SettingsVariants::show_empty_categories::hide_menu_items::N"
+msgid "Do not hide category-assigned menu items"
+msgstr "Не скрывать элементы меню используемые для категорий"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_menu_items::Y"
+msgid "Hide category-assigned menu item if the category gets hidden"
+msgstr "Скрывать элементы меню используемые для категорий если категория была скрыта"
+
+msgctxt "SettingsOptions::show_empty_categories::hide_menu_items"
+msgid "Menu items"
+msgstr "Элементы меню"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_parent_categories::Y"
+msgid "Hide empty parent categories"
+msgstr "Скрывать пустые родительские категории"
+
+msgctxt "SettingsVariants::show_empty_categories::hide_parent_categories::N"
+msgid "Do not hide parent categories"
+msgstr "Не скрывать родительские категории"
+
+msgctxt "SettingsOptions::show_empty_categories::hide_parent_categories"
+msgid "Parent categories"
+msgstr "Родительские категории"
